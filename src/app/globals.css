@@ -2,26 +2,463 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.myVideoBg {
+    position: relative;
+    z-index: 0;
+    top: 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.7;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+* {
+    margin: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;  
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+
+    padding: 10px 0;
   }
+  
+  .topnav #myLinks {
+    display: none;
+    text-align: center;
+    width: 70%;
+    margin-top: 10%;
+  }
+  
+  .btnMenu {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 5%;
+    right: 0;
+  }
+  
+  .btnMenu:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .icon{
+      display: inline-block;
+  }
+  .active{
+    background-color: rgb(59, 59, 59);
+  }
+
+  .logoLink{
+      margin-left: 5%;
+  }
+  
+.Logomarca{
+    height: 40px;  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.containerCapa{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+}
+.content{
+    position: relative;
+    z-index: 1;
+    top: -80px;
+    margin-top: -60px;
+    right: 5%;
+}
+.containerPad{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.backBlak{
+    background-color: #161616;
+    color: #FFF;
+}
+.TitleCapa{
+    font-size: x-large;
+    font-weight: bold;
+}
+.SubtitleCapa{
+    font-size: medium;
+}
+
+.imgAbout{
+  width: 100%;
+  margin: 0 auto;
+  
+}
+.TextEquipe{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+.title{
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+    font-size: x-large;
+
+}
+
+.textDescription{
+    font-size: small;
+}
+.TextBlackFox{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.buttonWhite{
+    cursor: pointer;
+    width: 100%;
+    font-size: 10pt;
+    margin-top: 5%;
+    padding: 8px 0;
+    border: 1px solid #161616;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+.buttonWhite:hover{
+    background-color: rgba(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+}
+.buttonWhite:active{
+    background-color: #161616;
+    color: white;
+    transition: 0s;
+}
+.containerCompet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.listCards{
+  justify-content: space-evenly;
+}
+.cardCompet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin-bottom: 15px;
+    padding: 20px 5px;
+    text-align: center;
+}
+.titleCompet{
+    font-weight: bold;
+    margin: 5px 0;
+}
+.descriptionCompet{
+    font-size: small;
+    color: rgb(168, 168, 168);
+}
+
+.cardPort{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 400px;
+    width: 250px;
+    background-size: cover;
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.titlePort{
+    font-weight: bold;
+}
+.descriptionPort{
+    font-size: small;
+}
+.textMensage{
+    font-size: small;
+}
+.aspas{
+    font-size: x-large;
+}
+.aspasEnd{
+    margin-top: 15px;
+}
+
+.sendContact{
+    background-color: #D4D4D4;
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    border-radius: 5px;
+}
+.contact{
+    margin-top: -5vh;
+    position: relative;
+    z-index: -1;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.btnBlack{
+    background-color: #161616;
+    color: white;
+    padding: 5px 10px;
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+.containerContact{
+    display: flex;
+    flex-direction: column;
+}
+.sendContact p{
+    font-size: medium;
+}
+.containerCompetences{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.containerMedia{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.modal{
+   display: none;
+   position: fixed;
+   z-index: 100;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0,0.5);
+}
+.modal-content {
+    background-color: #161616;
+    color: white;
+    margin: auto;
+    padding: 10px 5%;
+    border: 1px solid rgb(83, 83, 83);
+    width: 80%;
+    margin-top: 5vh;
+    height: 90vh;
+  }
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      text-align: left;
+  }
+
+  iframe{
+      margin: 3% auto;
+  }
+.columnModal{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 10px;
+
+}
+  .titleModal{
+    font-size: small;
+  }
+  .titleModalResp{
+    font-size: large;
+  }
+  .CardDepoiments{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.containerClients{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.widthLogos{
+  width: 80px;
+  height: auto;
+}
+
+.containerPortfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.containerGalery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;   
+    margin-bottom: 15vh;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 90%;
+  max-width: 1000px;
+  position: relative;
+  margin: 0px auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
