@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import ImageAbout from '../../public/assets/about.png'
+import ImageAbout from '../../../public/assets/about.png'
 
 export default function AboutComp() {
     return (
