@@ -13,10 +13,10 @@ export default function index() {
   return (
     <main className="flex flex-col w-full">
       <div className='flex flex-col justify-center items-center min-h-[80vh] text-white bg-black'>
-        <p class="flex w-full justify-center text-4xl font-black uppercase mb-14 items-center">L'AGENCE</p>
-        <div class="flex flex-row justify-center items-center w-9/12 space-x-8">
-          <Image src={Logo} alt="Logomarca da Black Fox" class="w-2/12" />
-          <div class="flex flex-col w-5/12 space-y-4 ">
+        <p className="flex w-full justify-center text-4xl font-black uppercase mb-14 items-center">L'AGENCE</p>
+        <div className="flex flex-row justify-center items-center w-9/12 space-x-8">
+          <Image src={Logo} alt="Logomarca da Black Fox" className="w-2/12" />
+          <div className="flex flex-col w-5/12 space-y-4 ">
             <p className='text-3xl font-semibold uppercase'>Essence Films</p>
             <p>Née d'une collaboration entre anciens militaires, une société à vu le jour.</p>
             <p>
@@ -27,12 +27,12 @@ export default function index() {
         </div>
       </div>
       <div className='w-full flex flex-col justify-center items-center bg-white  min-h-[80vh]'>
-        <p class="flex w-full justify-center text-4xl font-black uppercase mb-14 items-center">L'Equipe</p>
+        <p className="flex w-full justify-center text-4xl font-black uppercase mb-14 items-center">L'Equipe</p>
 
-        <div class="flex space-x-6 max-w-3xl px-8 py-8 rounded-lg space-y-2 bg-gray-100 shadow-md">
+        <div className="flex space-x-6 max-w-3xl px-8 py-8 rounded-lg space-y-2 bg-gray-100 shadow-md">
           <div className='pr-2 w-3/12'>
-            <Image class="mt-4" src={AvatarVando} />
-            <div class="flex flex-row justify-around py-2">
+            <Image className="mt-4" src={AvatarVando} />
+            <div className="flex flex-row justify-around py-2">
               <Link href={"https://www.linkedin.com/in/vando-oliver-b9487920b/"} target="_blank" className="p-2 hover:bg-gray-200 rounded-full">
                 <LinkedinLogo size={22} weight="light" />
               </Link>

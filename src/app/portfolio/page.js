@@ -66,8 +66,8 @@ export const CardPortfolio = ({id, title, client, durationVideo, imageCover, onC
         <div key={id} className='relative flex rounded-lg overflow-hidden w-[250px] h-[400px] cursor-pointer	hover:scale-[+1.1] transition delay-100 duration-300 ease-in-out ' onClick={onClickCard}>
             <Image src={imageCover} alt={title} className="w-full absolute" />
             <div className='absolute flex flex-col w-full justify-center items-center bottom-6'>
-                <p class="font-bold text-white uppercase">{title}</p>
-                <p class="text-white text-sm">{client} - {durationVideo}</p>
+                <p className="font-bold text-white uppercase">{title}</p>
+                <p className="text-white text-sm">{client} - {durationVideo}</p>
             </div>
         </div>
     )
@@ -84,34 +84,34 @@ export const ModalDetails = ({ setModalDetails, item }) => {
 
                 <iframe width="100%" height="400" src={item.videoProject} title="YouTube vidéo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <div class="row">
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Title Project</p>
-                        <p class="font-semibold text-xl">{item.title}</p>
+                <div className="row">
+                    <div className="columnModal">
+                        <p className="uppercase text-sm tracking-widest">Title Project</p>
+                        <p className="font-semibold text-xl">{item.title}</p>
                     </div>
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Client</p>
-                        <p class="font-semibold text-xl">{item.clientName}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Duração</p>
-                        <p class="font-semibold text-xl">{item.durationVideo}</p>
-                    </div>
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Ano</p>
-                        <p class="font-semibold text-xl">{item.ano}</p>
+                    <div className="columnModal">
+                        <p className="uppercase text-sm tracking-widest">Client</p>
+                        <p className="font-semibold text-xl">{item.clientName}</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Service</p>
-                        <p class="font-semibold text-xl">{item.serviceType}</p>
+                <div className="row">
+                    <div className="columnModal">
+                        <p className="uppercase text-sm tracking-widest">Duração</p>
+                        <p className="font-semibold text-xl">{item.durationVideo}</p>
                     </div>
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Contact Client</p>
-                        <p class="font-semibold text-xl">{item.contactClient}</p>
+                    <div className="columnModal">
+                        <p className="uppercase text-sm tracking-widest">Ano</p>
+                        <p className="font-semibold text-xl">{item.ano}</p>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="columnModal">
+                        <p className="uppercase text-sm tracking-widest">Service</p>
+                        <p className="font-semibold text-xl">{item.serviceType}</p>
+                    </div>
+                    <div className="columnModal">
+                        <p className="uppercase text-sm tracking-widest">Contact Client</p>
+                        <p className="font-semibold text-xl">{item.contactClient}</p>
                     </div>
                 </div>
             </div>
@@ -123,8 +123,8 @@ export default function PortifolioPage() {
     const [modalDetails, setModalDetails] = useState(false)
     const [modalSelected, setModalSelected] = useState()
     return (
-        <div class="flex flex-col justify-around items-center px-28 py-24 text-white bg-black min-h-[90vh]">
-            <p class="text-4xl font-black uppercase mb-14">Découvrez notre travail</p>
+        <div className="flex flex-col justify-around items-center px-28 py-24 text-white bg-black min-h-[90vh]">
+            <p className="text-4xl font-black uppercase mb-14">Découvrez notre travail</p>
             <div className='grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4'>
                 {PortfolioData.map(item =>
                     <CardPortfolio

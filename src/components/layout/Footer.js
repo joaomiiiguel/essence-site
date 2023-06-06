@@ -4,7 +4,7 @@ import { InstagramLogo, YoutubeLogo, WhatsappLogo } from "@phosphor-icons/react"
 import Link from 'next/link';
 import Image from 'next/image';
 
-import LogoImg from '../../public/logo.png'
+import LogoImg from '../../../public/logo.png'
 
 export default function Footer() {
     return (

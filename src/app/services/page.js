@@ -9,22 +9,22 @@ export default function sercivesPage() {
         <ServiceComp />
       </div>
       <div className='flex flex-col justify-center items-center min-h-[80vh] text-black bg-white'>
-        <p class="flex w-full justify-center text-4xl font-black uppercase mb-14 items-center">COMMENT FAIRE?</p>
-        <div class="grid grid-flow-col grid-cols-3 gap-20 w-8/12">
-          <div class="flex flex-col p-4 text-center">
-            <p class="text-5xl font-black">1</p>
-            <p class="text-lg font-semibold">Planning</p>
-            <p class="text-justify mt-4">Nous mettons nos talents, et notre expertise  à service de vos projets: Concepteurs-rédacteurs, Directeurs Artistiques, Cadreurs, Producteurs, Illustrateurs, Customer Success Managers, Motion Designers, etc.</p>
+        <p className="flex w-full justify-center text-4xl font-black uppercase mb-14 items-center">COMMENT FAIRE?</p>
+        <div className="grid grid-flow-col grid-cols-3 gap-20 w-8/12">
+          <div className="flex flex-col p-4 text-center">
+            <p className="text-5xl font-black">1</p>
+            <p className="text-lg font-semibold">Planning</p>
+            <p className="text-justify mt-4">Nous mettons nos talents, et notre expertise  à service de vos projets: Concepteurs-rédacteurs, Directeurs Artistiques, Cadreurs, Producteurs, Illustrateurs, Customer Success Managers, Motion Designers, etc.</p>
           </div>
-          <div class="flex flex-col p-4 text-center">
-            <p class="text-5xl font-black">2</p>
-            <p class="text-lg font-semibold">Réalisation</p>
-            <p class="text-justify mt-4">Notre équipe débarque chez vous ou lieu de tournage. Nous appliquerons toutes vos demandes afin de garantir la réalisation d'une vidéo qui réponde parfaitement à vos attentes. Nous permettons à nos clients de faire leurs retours à chaque étape du processus de production.</p>
+          <div className="flex flex-col p-4 text-center">
+            <p className="text-5xl font-black">2</p>
+            <p className="text-lg font-semibold">Réalisation</p>
+            <p className="text-justify mt-4">Notre équipe débarque chez vous ou lieu de tournage. Nous appliquerons toutes vos demandes afin de garantir la réalisation d'une vidéo qui réponde parfaitement à vos attentes. Nous permettons à nos clients de faire leurs retours à chaque étape du processus de production.</p>
           </div>
-          <div class="flex flex-col p-4 text-center">
-            <p class="text-5xl font-black">3</p>
-            <p class="text-lg font-semibold">Édition</p>
-            <p class="text-justify mt-4">À partir de vos rushes vidéo ou bien suite à un tournage réalisé par notre équipe, nous effectuerons la post-production de votre film d’entreprise. Les monteurs vidéo et les motion designers se chargeront de votre film promotionnel.</p>
+          <div className="flex flex-col p-4 text-center">
+            <p className="text-5xl font-black">3</p>
+            <p className="text-lg font-semibold">Édition</p>
+            <p className="text-justify mt-4">À partir de vos rushes vidéo ou bien suite à un tournage réalisé par notre équipe, nous effectuerons la post-production de votre film d’entreprise. Les monteurs vidéo et les motion designers se chargeront de votre film promotionnel.</p>
           </div>
         </div>
       </div>

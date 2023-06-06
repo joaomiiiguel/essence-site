@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import LogoImg from '../../public/logo.png'
-import Footer from '../components/Footer';
+import Footer from '../components/layout/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
