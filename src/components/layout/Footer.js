@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React from 'react'
 import { InstagramLogo, YoutubeLogo, WhatsappLogo } from "@phosphor-icons/react";
 import Link from 'next/link';
@@ -32,7 +32,7 @@ export default function Footer() {
                     <WhatsappLogo size={22} weight="light" />
                 </Link>
             </div>
-            <p className="text-xs opacity-30 mt-10">website by @dev.joaomiguel</p>
+            <p className=" text-xs opacity-30 mt-10">website by <Link href={'https://www.instagram.com/dev.joaomiguel/'} target="_blank" className='cursor-pointer font-semibold hover:underline'>@dev.joaomiguel</Link></p>
         </footer>
     )
 }

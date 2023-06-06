@@ -62,7 +62,7 @@ const PortfolioData = [
 
 ]
 
-export const CardPortfolio = ({id, title, client, durationVideo, imageCover, onClickCard }) => {
+export const CardPortfolio = ({ id, title, client, durationVideo, imageCover, onClickCard }) => {
     return (
         <div key={id} className='relative flex rounded-lg overflow-hidden w-[250px] h-[400px] cursor-pointer	hover:scale-[+1.1] transition delay-100 duration-300 ease-in-out ' onClick={onClickCard}>
             <Image src={imageCover} alt={title} className="w-full absolute" />
@@ -125,8 +125,8 @@ export default function PortifolioComp() {
     const [modalSelected, setModalSelected] = useState()
     return (
         <div class="flex flex-col justify-between min-h-[90vh] items-center px-28 py-24  text-black">
-            <p class="text-4xl font-black uppercase my-14">Découvrez notre travail</p>
-            <div className='grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4'>
+            <p class="text-4xl font-black uppercase mt-14">Découvrez notre travail</p>
+            <div className='grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 my-14'>
                 {PortfolioData.map(item =>
                     <CardPortfolio
                         id={item.id}
@@ -143,7 +143,6 @@ export default function PortifolioComp() {
             </div>
 
             <Link className='border-2 border-black py-2 px-10 font-semibold text-center hover:bg-black hover:text-white transition delay-100 duration-300 ease-in-out rounded tracking-widest' href={"/portfolio"} >VOIR PLUS</Link>
-
         </div>
     )
 }
