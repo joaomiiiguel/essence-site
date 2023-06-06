@@ -8,7 +8,7 @@ import Icon4 from '../../../public/assets/film-editing.svg'
 import Icon5 from '../../../public/assets/drone.svg'
 import Icon6 from '../../../public/assets/digital-marketing.svg'
 import Icon7 from '../../../public/assets/camera.svg'
-import Icon8 from '../../../public/assets/3D.svg'
+import Icon8 from '../../../public/assets/3d.svg'
 
 export const CardServices = ({ title, description, iconURL }) => {
     return (

@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { X } from "@phosphor-icons/react";
-import Link from 'next/link';
 
 
 import ImgCard1 from '../../../public/assets/capa4.png'
@@ -77,8 +76,8 @@ export const CardPortfolio = ({id, title, client, durationVideo, imageCover, onC
 
 export const ModalDetails = ({ setModalDetails, item }) => {
     return (
-        <div className='fixed bg-black top-0 left-0 z-50 w-full h-full bg-opacity-50'>
-            <div className='bg-white w-1/2 mx-auto mt-[3%] p-14 pb-16'>
+        <div className='fixed bg-black  top-0 left-0 z-50 w-full h-full bg-opacity-50'>
+            <div className='bg-white text-black w-7/12 mx-auto mt-[3%] p-14 pb-16'>
                 <div className='float-right mb-6 cursor-pointer hover:opacity-40' onClick={() => setModalDetails(false)}>
                     <X size={26} weight="bold" />
                 </div>
@@ -120,12 +119,12 @@ export const ModalDetails = ({ setModalDetails, item }) => {
     )
 }
 
-export default function PortifolioComp() {
+export default function PortifolioPage() {
     const [modalDetails, setModalDetails] = useState(false)
     const [modalSelected, setModalSelected] = useState()
     return (
-        <div class="flex flex-col justify-between min-h-[90vh] items-center px-28 py-24  text-black">
-            <p class="text-4xl font-black uppercase my-14">Découvrez notre travail</p>
+        <div class="flex flex-col justify-around items-center px-28 py-24 text-white bg-black min-h-[90vh]">
+            <p class="text-4xl font-black uppercase mb-14">Découvrez notre travail</p>
             <div className='grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4'>
                 {PortfolioData.map(item =>
                     <CardPortfolio
@@ -141,9 +140,6 @@ export default function PortifolioComp() {
                 {modalDetails && <ModalDetails setModalDetails={setModalDetails} item={modalSelected} />}
 
             </div>
-
-            <Link className='border-2 border-black py-2 px-10 font-semibold text-center hover:bg-black hover:text-white transition delay-100 duration-300 ease-in-out rounded tracking-widest' href={"/portfolio"} >VOIR PLUS</Link>
-
         </div>
     )
 }
