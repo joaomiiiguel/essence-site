@@ -4,8 +4,7 @@ import { CaretDoubleDown, MouseSimple } from "@phosphor-icons/react";
 export default function BannerCover() {
     return (
         <div className="relative flex flex-col justify-end items-end h-screen bg-black">
-            <video className="myVideoBg" crossOrigin="Anonymous" src='http://localhost:3000/assets/paneauSite.mp4' id='video' width='400' height='360' autoPlay muted loop type="video/mp4" />
-            {/* <iframe className="myVideoBg" width="560" height="315" src="blob:https://youfiles.herokuapp.com/d250f7c1-2188-47c1-bfdd-87589163f0e4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+            <video className="myVideoBg" crossOrigin="Anonymous" src='https://www.essencefilms.fr/assets/paneauSite.mp4' id='video' width='400' height='360' autoPlay muted loop type="video/mp4" />
             <div className=" absolute px-28 py-24">
                 <p className="text-4xl font-medium">Boostez les résultats de votre vidéo</p>
                 <p className="font-light tracking-widest text-right mb-[30%]">Renforcer la communication avec la <br />créativité et l'innovation</p>
