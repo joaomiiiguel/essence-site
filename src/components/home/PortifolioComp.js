@@ -1,9 +1,11 @@
 'use client'
-import Image from 'next/image'
+
 import React, { useState } from 'react'
-import { X } from "@phosphor-icons/react";
 import Link from 'next/link';
 
+
+import {CardPortfolio} from '../../components/CardPort'
+import {ModalDetails} from '../../components/ModalDetails'
 
 import ImgCard1 from '../../../public/assets/capa4.png'
 import ImgCard2 from '../../../public/assets/capa1.png'
@@ -62,70 +64,13 @@ const PortfolioData = [
 
 ]
 
-export const CardPortfolio = ({ id, title, client, durationVideo, imageCover, onClickCard }) => {
-    return (
-        <div key={id} className='relative flex rounded-lg overflow-hidden w-[250px] h-[400px] cursor-pointer	hover:scale-[+1.1] transition delay-100 duration-300 ease-in-out ' onClick={onClickCard}>
-            <Image src={imageCover} alt={title} className="w-full absolute" />
-            <div className='absolute flex flex-col w-full justify-center items-center bottom-6'>
-                <p class="font-bold text-white uppercase">{title}</p>
-                <p class="text-white text-sm">{client} - {durationVideo}</p>
-            </div>
-        </div>
-    )
-}
-
-
-export const ModalDetails = ({ setModalDetails, item }) => {
-    return (
-        <div className='fixed bg-black top-0 left-0 z-50 w-full h-full bg-opacity-50'>
-            <div className='bg-white w-1/2 mx-auto mt-[3%] p-14 pb-16'>
-                <div className='float-right mb-6 cursor-pointer hover:opacity-40' onClick={() => setModalDetails(false)}>
-                    <X size={26} weight="bold" />
-                </div>
-
-                <iframe width="100%" height="400" src={item.videoProject} title="YouTube vidéo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                <div class="row">
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Title Project</p>
-                        <p class="font-semibold text-xl">{item.title}</p>
-                    </div>
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Client</p>
-                        <p class="font-semibold text-xl">{item.clientName}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Duração</p>
-                        <p class="font-semibold text-xl">{item.durationVideo}</p>
-                    </div>
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Ano</p>
-                        <p class="font-semibold text-xl">{item.ano}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Service</p>
-                        <p class="font-semibold text-xl">{item.serviceType}</p>
-                    </div>
-                    <div class="columnModal">
-                        <p class="uppercase text-sm tracking-widest">Contact Client</p>
-                        <p class="font-semibold text-xl">{item.contactClient}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
 
 export default function PortifolioComp() {
     const [modalDetails, setModalDetails] = useState(false)
     const [modalSelected, setModalSelected] = useState()
     return (
-        <div class="flex flex-col justify-between min-h-[90vh] items-center px-28 py-24  text-black">
-            <p class="text-4xl font-black uppercase mt-14">Découvrez notre travail</p>
+        <div className="flex flex-col w-screen justify-between min-h-[90vh] items-center px-8 md:px-28 py-24  text-black">
+            <p className="text-2xl lg:text-4xl font-black uppercase mt-14">Découvrez notre travail</p>
             <div className='grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 my-14'>
                 {PortfolioData.map(item =>
                     <CardPortfolio

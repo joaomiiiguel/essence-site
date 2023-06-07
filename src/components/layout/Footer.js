@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <footer className="containerPad backBlak contact" id='contact'>
             <div className="flex flex-row justify-around items-center w-full my-20">
-                <Image src={LogoImg} alt="Logo" width={120} />
+                <Image src={LogoImg} alt="Logo" width={120}  />
                 <div>
                     <p className="text-sm font-light">ADRESSE</p>
                     <p className="font-bold mb-10">TOULON (83100), France </p>

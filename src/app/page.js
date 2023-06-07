@@ -9,7 +9,7 @@ import ServiceComp from "../components/home/ServiceComp"
 export default function Home() {
 
   return (
-    <main className="w-full min-h-screen text-white ">
+    <main className="max-w-screen overflow-hidden min-h-screen text-white ">
       <BannerCover />
       <AboutComp />
       <ServiceComp />

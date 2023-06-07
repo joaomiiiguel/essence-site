@@ -6,9 +6,9 @@ import ImageAbout from '../../../public/assets/about.png'
 
 export default function AboutComp() {
     return (
-        <div class="flex flex-row justify-around items-center text-black px-28 py-24">
+        <div class="flex flex-col md:flex-row justify-around items-center text-black px-8 md:px-28 py-24">
             <Image src={ImageAbout} alt="about image" />
-            <div className='flex flex-col w-4/12 space-y-4'>
+            <div className='flex flex-col w-10/12 ld:w-4/12 space-y-4'>
                 <div>
                     <p class="font-semibold">NOTRE ÉQUIPE</p>
                     <p class="text-4xl font-black uppercase">Essence films</p>

@@ -23,7 +23,7 @@ export const CardServices = ({ title, description, iconURL }) => {
 export default function ServiceComp() {
     return (
         <div class="flex flex-col justify-around items-center bg-black px-28 py-24">
-            <p class="text-4xl font-black uppercase mb-10">NOS COMPÉTENCES</p>
+            <p class="text-2xl lg:text-4xl font-black uppercase mb-10">NOS COMPÉTENCES</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-14">
                 <CardServices title={'VÍDEO PUBLICITÉS'} description={'Vidéo de promotion à destination du grand public'} iconURL={Icon1}/>
                 <CardServices title={'VIDEO INTERVIEW'} description={'JRI + matériel, livraison J+1'} iconURL={Icon2}/>

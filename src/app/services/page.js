@@ -9,8 +9,8 @@ export default function sercivesPage() {
         <ServiceComp />
       </div>
       <div className='flex flex-col justify-center items-center min-h-[80vh] text-black bg-white'>
-        <p className="flex w-full justify-center text-4xl font-black uppercase mb-14 items-center">COMMENT FAIRE?</p>
-        <div className="grid grid-flow-col grid-cols-3 gap-20 w-8/12">
+        <p className="flex py-10 justify-center text-4xl font-black uppercase lg:mb-14 items-center">COMMENT FAIRE?</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 w-8/12">
           <div className="flex flex-col p-4 text-center">
             <p className="text-5xl font-black">1</p>
             <p className="text-lg font-semibold">Planning</p>

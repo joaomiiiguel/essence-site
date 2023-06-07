@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function BoxContatWhat() {
     return (
         <div>
-            <div className="w-7/12 bg-gray-300 mx-auto p-10 rounded-md flex flex-row justify-between items-center z-10">
+            <div className="w-10/12 lg:w-7/12 bg-gray-300 mx-auto p-10 rounded-md flex flex-col lg:flex-row justify-between items-center z-10 space-y-2">
                 <div className='text-black'>
                     <p className='text-2xl'>Boostez les résultats</p>
                     <p className='text-2xl  font-semibold'>de votre vidéo</p>
