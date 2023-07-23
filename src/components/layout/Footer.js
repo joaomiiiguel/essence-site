@@ -13,11 +13,10 @@ export default function Footer() {
                 <Image src={LogoImg} alt="Logo" width={120}  />
                 <div>
                     <p className="text-sm font-light">ADRESSE</p>
-                    <p className="font-bold mb-10">TOULON (83100), France </p>
+                    <p className="font-bold mb-10">40110 Arengosse, <br/> déplacement possible en toute la France et l'étranger</p>
 
                     <p className="text-sm font-light">ADRESSE CONTACT</p>
                     <p className="font-bold">+33 6 58 75 34 66 - Vando Oliver</p>
-                    <p className="font-bold">contact@blackfoxprod.fr</p>
                 </div>
 
             </div>
@@ -28,7 +27,7 @@ export default function Footer() {
                 <Link href={"https://www.youtube.com/@EssenceFilms."} target="_blank">
                     <YoutubeLogo size={22} weight="fill" />
                 </Link>
-                <Link href={"https://www.facebook.com/blackfoxrpod"} target="_blank">
+                <Link href={"https://api.whatsapp.com/send?phone=33658753466&text=Ol%C3%A1"} target="_blank">
                     <WhatsappLogo size={22} weight="light" />
                 </Link>
             </div>

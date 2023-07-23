@@ -14,9 +14,6 @@ export default function AboutComp() {
                     <p class="text-4xl font-black uppercase">Essence films</p>
                 </div>
                 <p>
-                    Née de la collaboration d'anciens militaires, une entreprise est née
-                    <br />
-                    <br />
                     Essence Films est une agence de production audiovisuelle qui développe et produit, des contenus télévisuels et cinématographiques. Elle travaille en collaboration avec des scénaristes et des réalisateurs. Sa ligne éditoriale est éclectique, avec Originalité et Audace.
                     Spécialisée dans le secteur d'activité de la production de films institutionnels et publicitaires.
                 </p>
