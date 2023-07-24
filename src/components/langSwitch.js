@@ -17,7 +17,7 @@ export default function LangSwitch() {
     }
 
     return (
-        <div className='flex flex-col justify-center items-center text-white'>
+        <div className='flex flex-col justify-center items-center text-white ml-4'>
             <label for="lng" className='text-[10px]'>{language === 'fr' ? 'Langue' : 'Language'}</label>
             <select name="lng" id="lng" className='bg-transparent px-4' onChange={(e) => changeLanguage(e.target.value)}>
                 <option value="en">EN</option>

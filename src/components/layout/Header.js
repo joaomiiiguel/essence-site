@@ -29,11 +29,12 @@ export default function Header() {
                 <Link href={"/"}>
                     <Image src={LogoImg} alt="Logo Le monde" height={80} className="h-fit p-2" priority />
                 </Link>
-                <div className="hidden lg:flex flex-row justify-between items-center py-2 w-4/12">
+                <div className="hidden lg:flex flex-row justify-between items-center py-2 lg:w-6/12 xl:w-4/12">
                     <MenuLink nameButton={'menu_agence'} urlLink={'/lagence'} />
                     <MenuLink nameButton={'menu_services'} urlLink={'/services'} />
                     <MenuLink nameButton={'menu_portfolio'} urlLink={'/portfolio'} />
                     <MenuLink nameButton={'menu_contact'} urlLink={'#contact'} />
+                    <LangSwitch />
                 </div>
                 <button onClick={() => setModalMenu(!modalMenu)} className="flex lg:hidden text-white flex-row justify-between items-center py-">
                     <List size={25} weight="bold" />
@@ -45,11 +46,10 @@ export default function Header() {
                         <MenuLink nameButton={'menu_services'} urlLink={'/services'} />
                         <MenuLink nameButton={'menu_portfolio'} urlLink={'/portfolio'} />
                         <MenuLink nameButton={'menu_contact'} urlLink={'#contact'} />
-
+                        <LangSwitch />
                     </div>
                 }
 
-                <LangSwitch/>
             </div>
 
         </>
