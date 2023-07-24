@@ -2,7 +2,8 @@
 import React, { useState } from 'react'
 import { CardPortfolio } from '../../components/CardPort'
 import { ModalDetails } from '../../components/ModalDetails'
-
+import { useTranslation } from 'react-i18next';
+import '../../service/translate/i18n'
 
 import ImgCard1 from '../../../public/assets/capa4.png'
 import ImgCard2 from '../../../public/assets/capa1.png'
@@ -64,9 +65,10 @@ const PortfolioData = [
 export default function PortifolioPage() {
     const [modalDetails, setModalDetails] = useState(false)
     const [modalSelected, setModalSelected] = useState()
+    const {t} = useTranslation()
     return (
         <div className="flex flex-col w-screen justify-around items-center px-8 md:px-28 py-24 text-white bg-black min-h-[90vh]">
-            <p className="text-2xl lg:text-4xl font-black uppercase mb-14">Découvrez notre travail</p>
+            <p className="text-2xl lg:text-4xl font-black uppercase mb-14">{t('about_title')}</p>
             <div className='grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4'>
                 {PortfolioData.map(item =>
                     <CardPortfolio

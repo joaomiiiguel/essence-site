@@ -3,19 +3,23 @@ import React from 'react'
 import { InstagramLogo, YoutubeLogo, WhatsappLogo } from "@phosphor-icons/react";
 import Link from 'next/link';
 import Image from 'next/image';
+import './../../service/translate/i18n'
+import { useTranslation } from 'react-i18next'
 
 import LogoImg from '../../../public/logo.png'
 
 export default function Footer() {
+    const { t } = useTranslation()
+
     return (
         <footer className="containerPad backBlak contact" id='contact'>
             <div className="flex flex-row justify-around items-center w-full my-20">
                 <Image src={LogoImg} alt="Logo" width={120}  />
                 <div>
-                    <p className="text-sm font-light">ADRESSE</p>
-                    <p className="font-bold mb-10">40110 Arengosse, <br/> déplacement possible en toute la France et l'étranger</p>
+                    <p className="text-sm font-light uppercase">{t('footer_address')}</p>
+                    <p className="font-bold mb-10">40110 Arengosse, <br/> {t('footer_address_descrip')}</p>
 
-                    <p className="text-sm font-light">ADRESSE CONTACT</p>
+                    <p className="text-sm font-light uppercase">{t('footer_contact')}</p>
                     <p className="font-bold">+33 6 58 75 34 66 - Vando Oliver</p>
                 </div>
 
@@ -31,7 +35,7 @@ export default function Footer() {
                     <WhatsappLogo size={22} weight="light" />
                 </Link>
             </div>
-            <p className=" text-xs opacity-30 mt-10">website by <Link href={'https://www.instagram.com/dev.joaomiguel/'} target="_blank" className='cursor-pointer font-semibold hover:underline'>@dev.joaomiguel</Link></p>
+            <p className=" text-xs opacity-30 mt-10">{t('footer_developer')} <Link href={'https://www.instagram.com/dev.joaomiguel/'} target="_blank" className='cursor-pointer font-semibold hover:underline'>@dev.joaomiguel</Link></p>
         </footer>
     )
 }

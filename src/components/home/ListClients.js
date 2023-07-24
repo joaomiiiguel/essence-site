@@ -2,6 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+import './../../service/translate/i18n'
+import { useTranslation } from 'react-i18next'
+
 import Image1 from "../../../public/assets/logoClients/dca.png"
 import Image2 from "../../../public/assets/logoClients/ifs.png"
 import Image3 from "../../../public/assets/logoClients/lpn.png"
@@ -63,9 +66,11 @@ export const ClientCard = ({ logoClient, linkUrl }) => {
 }
 
 export default function ListClients() {
+    const { t } = useTranslation()
+
     return (
         <div className="flex flex-col justify-around items-center px-28 py-24 text-black">
-            <p className="text-4xl font-black uppercase mb-14">NOUS CLIENTS</p>
+            <p className="text-4xl font-black uppercase mb-14">{t('clients_title')}</p>
             <div className="grid gap-10 grid-cols-2 md:grid-cols-4" >
                 {ClientsData.map(item => 
                     <ClientCard logoClient={item.logoClient} linkUrl={item.linkUrl} />

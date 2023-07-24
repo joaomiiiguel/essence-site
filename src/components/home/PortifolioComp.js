@@ -12,6 +12,9 @@ import ImgCard2 from '../../../public/assets/capa1.png'
 import ImgCard3 from '../../../public/assets/capa2.png'
 import ImgCard4 from '../../../public/assets/capa3.png'
 
+import './../../service/translate/i18n'
+import { useTranslation } from 'react-i18next'
+
 const PortfolioData = [
     {
         id: 1,
@@ -19,7 +22,7 @@ const PortfolioData = [
         clientShortName: 'IFS',
         clientName: "L'Institut Français de Sécurité",
         ano: '2020',
-        serviceType: "VÍDEO PUBLICITÉS",
+        serviceType: 'card_vid_publi',
         durationVideo: '2 min',
         contactClient: "www.ecole-francaise-securite.fr",
         videoProject: "https://www.youtube.com/embed/Y0xefRC4TKk",
@@ -31,7 +34,7 @@ const PortfolioData = [
         clientShortName: 'ZR Team Nice',
         clientName: "ZR Team Nice",
         ano: '2021',
-        serviceType: "VÍDEO PUBLICITÉS",
+        serviceType: 'card_vid_publi',
         durationVideo: '1 min',
         contactClient: "https://zr-team-nice-centre.business.site/",
         videoProject: "https://www.youtube.com/embed/KzvyvHgmxO0",
@@ -43,7 +46,7 @@ const PortfolioData = [
         clientShortName: 'Fitness Park',
         clientName: "Fitness Park Salon-de-Provence",
         ano: '2022',
-        serviceType: "VÍDEO PUBLICITÉS",
+        serviceType: 'card_vid_publi',
         durationVideo: '1 min',
         contactClient: "https://www.fitnesspark.fr/club/salon-de-provence",
         videoProject: "https://www.youtube.com/embed/89hjqMKlgc0",
@@ -55,7 +58,7 @@ const PortfolioData = [
         clientShortName: 'Réalisations',
         clientName: "Réalisations",
         ano: '2021',
-        serviceType: "VÍDEO PUBLICITÉS",
+        serviceType: 'card_vid_publi',
         durationVideo: '1 min',
         contactClient: "-",
         videoProject: "https://www.youtube.com/embed/jEsmzFA85Us",
@@ -68,9 +71,10 @@ const PortfolioData = [
 export default function PortifolioComp() {
     const [modalDetails, setModalDetails] = useState(false)
     const [modalSelected, setModalSelected] = useState()
+    const {t} = useTranslation()
     return (
         <div className="flex flex-col w-screen justify-between min-h-[90vh] items-center px-8 md:px-28 py-24  text-black">
-            <p className="text-2xl lg:text-4xl font-black uppercase mt-14">Découvrez notre travail</p>
+            <p className="text-2xl lg:text-4xl font-black uppercase mt-14">{t('portfolio_title')}</p>
             <div className='grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 my-14'>
                 {PortfolioData.map(item =>
                     <CardPortfolio
@@ -87,7 +91,7 @@ export default function PortifolioComp() {
 
             </div>
 
-            <Link className='border-2 border-black py-2 px-10 font-semibold text-center hover:bg-black hover:text-white transition delay-100 duration-300 ease-in-out rounded tracking-widest' href={"/portfolio"} >VOIR PLUS</Link>
+            <Link className='border-2 border-black py-2 px-10 font-semibold text-center hover:bg-black hover:text-white transition delay-100 duration-300 ease-in-out rounded tracking-widest uppercase' href={"/portfolio"} >{t('portfolio_btnMore')}</Link>
         </div>
     )
 }

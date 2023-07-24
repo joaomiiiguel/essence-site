@@ -1,0 +1,59 @@
+{
+    "translation":{
+        "menu_agence": "L'agence",
+        "menu_services": "Services",
+        "menu_portfolio": "Portfolio",
+        "menu_contact": "Contact",
+
+        "banner_title": "Boostez les résultats de votre vidéo",
+        "banner_subtitle": "Renforcer la communication avec la créativité et l'innovation",
+
+        "about_title": "NOTRE ÉQUIPE",
+        "about_description": "Essence Films est une agence de production audiovisuelle qui développe et produit, des contenus télévisuels et cinématographiques. Elle travaille en collaboration avec des scénaristes et des réalisateurs. Sa ligne éditoriale est éclectique, avec Originalité et Audace. Spécialisée dans le secteur d'activité de la production de films institutionnels et publicitaires.",
+        "about_btnMore": "voir plus",
+
+        "services_title": "Our services",
+        "card_vid_publi": "VÍDEO PUBLICITÉS",
+        "descript_vid_publi": "Vidéo de promotion à destination du grand public",
+        "card_vid_inter": "VIDEO INTERVIEW",
+        "descript_vid_inter": "JRI + matériel, livraison J+1",
+        "card_mot_desig": "MOTION DESIGN",
+        "descript_mot_desig": "Création d’animations graphiques en vidéo pour exprimer votre entreprise.",
+        "card_mot_vid": "VIDEO ASSEMBLY",
+        "descript_mot_vid": "Nous tirons le meilleur de vos rushs et vous livrons dans le respect de votre budget/deadline",
+        "card_vid_drone": "Video Drone",
+        "descript_vid_drone": "Des plans aériens parfaitement fluides en intérieur et extérieur.",
+        "card_mkt_digital": "MARKETING DIGITAL",
+        "descript_mkt_digital": "des conseils experts avant de lancer la production",
+        "card_calibration": "ÉTALONNAGE",
+        "descript_calibration": "Étalonnage fiction, documentaires et publicité.",
+        "card_3D": "3D",
+        "descript_3D": "Modélisation et animation 3D",
+
+        "portfolio_title": "DÉCOUVREZ NOTRE TRAVAIL",
+        "portfolio_btnMore": "voir plus",
+
+        "clients_title": "NOUS CLIENTS",
+
+        "contactWhats_btn": "Parlons de votre projet",
+        "contactWhats_title": "Boostez les résultats",
+        "contactWhats_subtitle": "de votre vidéos",
+
+        "footer_address": "adress",
+        "footer_address_descrip": "déplacement possible en toute la France et l'étranger",
+        "footer_contact": "ADRESSE CONTACT",
+        "footer_developer": "site web par",
+
+        "services_howtodo": "COMMENT FAIRE?",
+        "services_howtodo_title1": "Planification",
+        "services_howtodo_descript1": "Nous mettons nos talents, et notre expertise à service de vos projets: Concepteurs-rédacteurs, Directeurs Artistiques, Cadreurs, Producteurs, Illustrateurs, Customer Success Managers, Motion Designers, etc.",
+        "services_howtodo_title2": "Réalisation",
+        "services_howtodo_descript2": "Notre équipe débarque chez vous ou lieu de tournage. Nous appliquerons toutes vos demandes afin de garantir la réalisation d'une vidéo qui réponde parfaitement à vos attentes. Nous permettons à nos clients de faire leurs retours à chaque étape du processus de production.",
+        "services_howtodo_title3": "Édition",
+        "services_howtodo_descript3": "À partir de vos rushes vidéo ou bien suite à un tournage réalisé par notre équipe, nous effectuerons la post-production de votre film d’entreprise. Les monteurs vidéo et les motion designers se chargeront de votre film promotionnel.",
+
+        "about_team_name": "L'EQUIPE",
+        "about_function_name": "Directeur de production",
+        "about_description_function": "Réalisateur et directeur de la photographie, ancien légionnaire et entrepreneur, je suis spécialisé dans la production de clips vidéo, le montage vidéo, les films institutionnels, les courts métrages et les moyens métrages. J'ai également de l'expérience dans la réalisation de films publicitaires, d'émissions télévisées et de documentaires. En tant que responsable de production audiovisuelle, j'ai accumulé 16 ans d'expérience dans le domaine de l'audiovisuel. Mes compétences incluent le montage et les effets spéciaux, l'étalonnage, le montage sonore, le motion design et la conception web. J'ai également une expertise en prise de vue vidéo et photo, en retouche et manipulation d'images, ainsi qu'en animation 2D et 3D. En outre, j'ai occupé le poste d'opérateur multimédia au Centre de communication de la Légion étrangère à Aubagne, où ma principale responsabilité était la production de vidéos institutionnelles pour la Légion."
+    }
+}

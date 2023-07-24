@@ -10,29 +10,35 @@ import Icon6 from '../../../public/assets/digital-marketing.svg'
 import Icon7 from '../../../public/assets/camera.svg'
 import Icon8 from '../../../public/assets/3d.svg'
 
+import './../../service/translate/i18n'
+import { useTranslation } from 'react-i18next'
+
 export const CardServices = ({ title, description, iconURL }) => {
+
     return (
         <div class="cardCompet">
             <Image class="iconsCompet" src={iconURL} />
-            <p class="titleCompet">{title}</p>
+            <p class="titleCompet uppercase">{title}</p>
             <p class="descriptionCompet">{description}</p>
         </div>
     )
 }
 
 export default function ServiceComp() {
+    const { t } = useTranslation()
+
     return (
         <div class="flex flex-col justify-around items-center bg-black px-28 py-24">
-            <p class="text-2xl lg:text-4xl font-black uppercase mb-10">NOS COMPÉTENCES</p>
+            <p class="text-2xl lg:text-4xl font-black uppercase mb-10">{t('services_title')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-14">
-                <CardServices title={'VÍDEO PUBLICITÉS'} description={'Vidéo de promotion à destination du grand public'} iconURL={Icon1}/>
-                <CardServices title={'VIDEO INTERVIEW'} description={'JRI + matériel, livraison J+1'} iconURL={Icon2}/>
-                <CardServices title={'MOTION DESIGN'} description={'Création d’animations graphiques en vidéo pour exprimer votre entreprise.'} iconURL={Icon3}/>
-                <CardServices title={'MONTAGE VIDEO'} description={'Nous tirons le meilleur de vos rushs et vous livrons dans le respect de votre budget/deadline'} iconURL={Icon4}/>
-                <CardServices title={'Video Drone'} description={'Des plans aériens parfaitement fluides en intérieur et extérieur.'} iconURL={Icon5}/>
-                <CardServices title={'MARKETING DIGITAL'} description={'des conseils experts avant de lancer la production'} iconURL={Icon6}/>
-                <CardServices title={'ÉTALONNAGE'} description={'Étalonnage fiction, documentaires et publicité.'} iconURL={Icon7}/>
-                <CardServices title={'3D'} description={'Modélisation et animation 3D'} iconURL={Icon8}/>
+                <CardServices title={t('card_vid_publi')} description={t('descript_vid_publi')} iconURL={Icon1}/>
+                <CardServices title={t('card_vid_inter')} description={t('descript_vid_inter')} iconURL={Icon2}/>
+                <CardServices title={t('card_mot_desig')} description={t('descript_mot_desig')} iconURL={Icon3}/>
+                <CardServices title={t('card_mot_vid')} description={t('descript_mot_vid')} iconURL={Icon4}/>
+                <CardServices title={t('card_vid_drone')} description={t('descript_vid_drone')} iconURL={Icon5}/>
+                <CardServices title={t('card_mkt_digital')} description={t('descript_mkt_digital')} iconURL={Icon6}/>
+                <CardServices title={t('card_calibration')} description={t('descript_calibration')} iconURL={Icon7}/>
+                <CardServices title={t('card_3D')} description={t('descript_3D')} iconURL={Icon8}/>
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import ListClients from "../components/home/ListClients"
 import PortifolioComp from "../components/home/PortifolioComp"
 import ServiceComp from "../components/home/ServiceComp"
 
-export default function Home() {
+function Home() {
 
   return (
     <main className="max-w-screen overflow-hidden min-h-screen text-white ">
@@ -19,3 +19,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Home;

@@ -1,0 +1,60 @@
+{
+    "translation": {
+        "menu_agence": "About us",
+        "menu_services": "Services",
+        "menu_portfolio": "Portfolio",
+        "menu_contact": "Contact",
+
+        "banner_title": "Boost your video results",
+        "banner_subtitle": "Strengthen communication with creativity and innovation",
+
+        "about_title": "our team",
+        "about_description": "Essence Films is an audiovisual production agency that develops and produces television and film content. She works in collaboration with screenwriters and directors. Its editorial line is eclectic, with Originality and Audacity. Specialized in the sector of activity of the production of institutional and advertising films.",
+        "about_btnMore": "view more",
+
+        "services_title": "Our services",
+        "card_vid_publi": "VIDEO ADVERTISEMENTS",
+        "descript_vid_publi": "Promotional video for the general public",
+        "card_vid_inter": "VIDEO INTERVIEW",
+        "descript_vid_inter": "JRI + equipment, D+1 delivery",
+        "card_mot_desig": "MOTION DESIGN",
+        "descript_mot_desig": "Creation of graphic animations in video to express your company.",
+        "card_mot_vid": "VIDEO ASSEMBLY",
+        "descript_mot_vid": "We get the best out of your rushes and deliver you on budget / deadline",
+        "card_vid_drone": "Video Drone",
+        "descript_vid_drone": "Perfectly fluid indoor and outdoor air plans.",
+        "card_mkt_digital": "MARKETING DIGITAL",
+        "descript_mkt_digital": "expert advice before starting production",
+        "card_calibration": "CALIBRATION",
+        "descript_calibration": "Calibration, documentaries and advertising.",
+        "card_3D": "3D",
+        "descript_3D": "3D modeling and animation",
+
+        "portfolio_title": "DISCOVER OUR WORK",
+        "portfolio_btnMore": "view more",
+
+        "clients_title": "our CLIENTS",
+
+        "contactWhats_btn": "Let's talk about your project",
+        "contactWhats_title": "Boost the results",
+        "contactWhats_subtitle": "from your video",
+
+        "footer_address": "address",
+        "footer_address_descrip": "travel possible throughout France and abroad",
+        "footer_contact": "CONTACT ADDRESS",
+        "footer_developer": "website by",
+
+        "services_howtodo": "HOW TO DO?",
+        "services_howtodo_title1": "Planning",
+        "services_howtodo_descript1": "We put our talents and our expertise at the service of your projects: Copywriters, Artistic Directors, Cameramen, Producers, Illustrators, Customer Success Managers, Motion Designers, etc.",
+        "services_howtodo_title2": "Development",
+        "services_howtodo_descript2": "Our team arrives at your home or filming location. We will apply all your requests to guarantee the production of a video that perfectly meets your expectations. We allow our customers to provide feedback at every stage of the production process.",
+        "services_howtodo_title3": "Editing",
+        "services_howtodo_descript3": "From your video rushes or following a shoot by our team, we will carry out the post-production of your corporate film. Video editors and motion designers will take care of your promotional film.",
+
+
+        "about_team_name": "our team",
+        "about_function_name": "Production manager",
+        "about_description_function": "Director and director of photography, former legionnaire and entrepreneur, I specialize in the production of video clips, video editing, institutional films, short films and medium-length films. I also have experience directing commercials, TV shows and documentaries. As an audiovisual production manager, I have accumulated 16 years of experience in the audiovisual field. My skills include editing and special effects, color grading, sound editing, motion design and web design. I also have expertise in video and photo shooting, image editing and manipulation, as well as 2D and 3D animation. In addition, I held the position of multimedia operator at the Communication Center of the Foreign Legion in Aubagne, where my main responsibility was the production of institutional videos for the Legion."
+    }
+}
